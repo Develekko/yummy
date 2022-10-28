@@ -132,7 +132,7 @@ function displayIngredients(Data)
          <div onclick="filterByIngredients('${value.strIngredient}')" class="item overflow-hidden position-relative text-center py-4 px-2">
          <i class="fa-solid fa-bowl-food fa-3x"></i>
          <h2 class="animate__animated title h3">${value.strIngredient}</h2>    
-         <p class="animate__animated desc">${value.strDescription.slice(0,50)}</p>
+         <p class="animate__animated desc">${value.strDescription.slice(0,100)}</p>
          </div>
      </div>
     `
