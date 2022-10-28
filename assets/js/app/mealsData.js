@@ -149,9 +149,9 @@ function mealDetails(Data) {
     let tagsStr = "";
     let recipes = "";
     for(let [key,value] of Details)
-    {
+    { 
         for (let i = 1; i < 20; i++) {
-            if (value[0][`strIngredient${i}`] != "") {
+            if (value[0][`strIngredient${i}`] != null && value[0][`strIngredient${i}`] != "") {
                 recipes += `
                 <span class="bg-success p-2 rounded animate__animated animate__flipInX animate__delay-1s"">${value[0][`strMeasure${i}`]} ${value[0][`strIngredient${i}`]}</span>
                 `
@@ -186,9 +186,12 @@ function mealDetails(Data) {
         </div>
     </div>
         `
-
         $('#hero .box').html(term);
         $('#tags').html(`<h3>Tags :</h3>${tagsStr}`);
+        if(`${tagsStr}` == "")
+        {
+            $('#tags').html(null)
+        }
         $('#recipes').html(`<h3>Recipes :</h3>${recipes}`);
         topZero();
     }
