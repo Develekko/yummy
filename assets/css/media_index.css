@@ -1,0 +1,75 @@
+@media (max-width: 599px) 
+{
+    nav
+    {
+        background-color: transparent;
+    }
+    nav .nav-logo , nav .nav-social
+    {
+       opacity: 0;
+    }
+    nav .nav-menu i 
+    {   
+        color: #fff;
+    }
+    #search
+    {
+        width: 75%!important;
+    }
+}
+@media (min-width: 600px) and (max-width:767px) 
+{
+    nav
+    {
+        background-color: transparent;
+    }
+    nav .nav-logo , nav .nav-social
+    {
+       opacity: 0;
+    }
+    nav .nav-menu i 
+    {
+        color: #fff;
+    }
+    #search
+    {
+        width: 75%!important;
+    }
+}
+@media (min-width: 768px) and (max-width:991px) {
+    nav
+    {
+        background-color: transparent;
+    }
+    nav .nav-logo , nav .nav-social
+    {
+       opacity: 0;
+    }
+    nav .nav-menu i 
+    {
+        color: #fff;
+    }
+    #search
+    {
+        width: 75%!important;
+    }
+    .overlay .title
+    {
+       font-size: 25px;
+    }
+    
+}
+@media (min-width: 992px) and (max-width:1199px) {
+    .overlay .title
+    {
+       font-size: 22px;
+    }
+    .overlay .desc
+    {
+       font-size: 14px;
+    }
+    .overlay .date
+    {
+       margin-bottom: 0px;
+    }
+}
